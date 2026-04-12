@@ -1,0 +1,42 @@
+.ticker {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: #F6F8FA;
+  border-bottom: 1px solid #D0D7DE;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.tickerLabel {
+  flex-shrink: 0;
+  padding: 0 12px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #0969DA;
+  border-right: 1px solid #D0D7DE;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.tickerTrack {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tickerText {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #57606A;
+  animation: marquee linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,130 @@
+.wrap {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── ヘッダー ── */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #24292F;
+}
+
+.latestRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 12px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+/* ── ビュー切替タブ ── */
+.viewTabs {
+  display: flex;
+  gap: 2px;
+  background: #F0F2F5;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.viewTab {
+  padding: 3px 10px;
+  font-size: 11px;
+  color: #57606A;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.viewTab:hover {
+  color: #24292F;
+  background: rgba(0,0,0,0.04);
+}
+
+.viewTabActive {
+  background: #FFFFFF;
+  color: #24292F;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* ── グラフエリア ── */
+.chartArea {
+  flex: 1;
+  min-height: 0;
+}
+
+/* ── 空状態 ── */
+.empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #57606A;
+}
+
+/* ── ツールチップ ── */
+.tooltip {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tooltipLabel {
+  color: #57606A;
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tooltipDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

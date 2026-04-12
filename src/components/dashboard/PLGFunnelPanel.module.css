@@ -1,0 +1,192 @@
+.wrap {
+  flex-shrink: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D0D7DE;
+  padding-bottom: 8px;
+}
+
+.hIcon {
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #00B4D8, #0077B6);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.titleText {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #00B4D8;
+}
+
+.titleBadge {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #00B4D8;
+  background: rgba(0,180,216,0.1);
+  border: 1px solid rgba(0,180,216,0.25);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+.totalRevenue {
+  font-size: 11px;
+  color: #57606A;
+}
+.totalRevenue strong {
+  color: #3FB950;
+  font-family: 'Courier New', monospace;
+}
+
+/* ファネル */
+.funnel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.stage {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.stageBarWrap {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stageBar {
+  height: 28px;
+  border-radius: 3px;
+  min-width: 8px;
+  transition: width 0.6s ease;
+}
+
+.stageInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stageHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stageIcon {
+  font-size: 12px;
+}
+
+.stageLabel {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.stageSublabel {
+  font-size: 9px;
+  color: #57606A;
+}
+
+.stageStats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statItem {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.statNum {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+.statLabel {
+  font-size: 9px;
+  color: #57606A;
+}
+
+.statDivider {
+  width: 1px;
+  height: 12px;
+  background: #D0D7DE;
+}
+
+.stageDesc {
+  font-size: 9px;
+  color: #57606A;
+}
+
+/* コンバージョン矢印 */
+.conversion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0 2px 70px;
+}
+
+.convArrow {
+  font-size: 9px;
+  color: #D0D7DE;
+}
+
+.convRate {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: 'Courier New', monospace;
+}
+
+/* サマリー */
+.summary {
+  display: flex;
+  gap: 0;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #D0D7DE;
+}
+
+.summaryItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.summaryLabel {
+  font-size: 9px;
+  color: #57606A;
+  letter-spacing: 0.06em;
+}
+
+.summaryValue {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}

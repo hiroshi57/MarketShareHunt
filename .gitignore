@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# production build (Railway上でビルドするため不要)
+build/
+
+# SQLite DB（本番はRailwayのボリュームで管理）
+server/game.db
+server/*.db
+
+# env
+.env
+.env.local
+.env.production.local
+
+# logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/

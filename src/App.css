@@ -1,0 +1,129 @@
+:root {
+  --bg: #F0F2F5;
+  --panel: #FFFFFF;
+  --panel-hover: #F6F8FA;
+  --border: #D0D7DE;
+  --text: #24292F;
+  --text-muted: #57606A;
+  --accent: #0969DA;
+  --success: #1A7F37;
+  --danger: #CF222E;
+  --warning: #9A6700;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 1280px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 1280px;
+}
+
+/* ゲームアクションエリア（社員 + 案件 横並び） */
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 8px;
+  background: var(--bg);
+  padding: 8px;
+  padding-bottom: 80px; /* TurnButton fixed分のスペース */
+}
+
+/* 左: 社員パネル */
+.action-column-left {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* 中央: 案件パネル */
+.action-column-center {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* 右: ダッシュボード */
+.action-column-right {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.pnl-cards-row {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* パネル共通 */
+.panel {
+  background: var(--panel);
+  padding: 14px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.panel-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ターン切り替えオーバーレイ */
+.turn-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 105, 218, 0.06);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+.turn-overlay.active {
+  opacity: 1;
+}
+
+/* モジュールパネル（折りたたみ用の小さいバー） */
+.module-bar {
+  flex-shrink: 0;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }

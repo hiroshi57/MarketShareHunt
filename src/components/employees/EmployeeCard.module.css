@@ -1,0 +1,360 @@
+.card {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  border-color: #0969DA;
+  box-shadow: 0 2px 8px rgba(9, 105, 218, 0.12);
+}
+
+.hired {
+  border-color: #1A7F37;
+  background: #F0FFF4;
+}
+
+.hired:hover {
+  border-color: #1A7F37;
+  box-shadow: 0 2px 8px rgba(26, 127, 55, 0.12);
+}
+
+.taken {
+  opacity: 0.45;
+}
+
+.flash {
+  background: #F0FFF4;
+  transition: background 0.1s;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatarWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatarHiredBadge {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  background: #1A7F37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #fff;
+}
+
+.nameBlock {
+  flex: 1;
+  min-width: 0;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #24292F;
+}
+
+.seniority {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.05);
+}
+
+.role {
+  font-size: 10px;
+  color: #57606A;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.dept {
+  font-size: 9px;
+  margin-top: 3px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.costBlock {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.costLabel {
+  font-size: 9px;
+  color: #57606A;
+  letter-spacing: 0.06em;
+}
+
+.cost {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  color: #9A6700;
+  line-height: 1.1;
+}
+
+.costSub {
+  font-size: 9px;
+  color: #57606A;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill {
+  position: relative;
+  font-size: 10px;
+  padding: 3px 8px;
+  background: #F6F8FA;
+  border-radius: 4px;
+  color: #57606A;
+  cursor: default;
+  transition: background 0.15s, color 0.15s;
+  border: 1px solid #D0D7DE;
+}
+
+.skill:hover {
+  background: #0969DA;
+  color: #fff;
+  border-color: #0969DA;
+}
+
+.skillMatch {
+  background: rgba(26, 127, 55, 0.1);
+  border-color: rgba(26, 127, 55, 0.4);
+  color: #1A7F37;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  z-index: 999;
+  background: #24292F;
+  border: 1px solid #444C56;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 11px;
+  color: #F0F6FC;
+  white-space: nowrap;
+  max-width: 260px;
+  white-space: normal;
+  line-height: 1.5;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.profile {
+  background: #F6F8FA;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profileRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.profileIcon {
+  font-size: 10px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.profileText {
+  font-size: 10px;
+  color: #57606A;
+  line-height: 1.5;
+}
+
+.profileLabel {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #24292F;
+  margin-right: 5px;
+}
+
+.impact {
+  background: #F6F8FA;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.impactRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.impactLabel {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #57606A;
+  flex-shrink: 0;
+}
+
+.impactCost {
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  color: #24292F;
+}
+
+.impactCost strong {
+  color: #9A6700;
+}
+
+.impactNeg {
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  color: #CF222E;
+  font-weight: 700;
+}
+
+.impactPos {
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  color: #1A7F37;
+  font-weight: 700;
+}
+
+.impactNote {
+  font-size: 10px;
+  color: #57606A;
+  line-height: 1.5;
+}
+
+.impactDivider {
+  height: 1px;
+  background: #D0D7DE;
+  margin: 1px 0;
+}
+
+.unlockProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.unlockProject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px;
+  background: rgba(26, 127, 55, 0.07);
+  border-radius: 3px;
+  border-left: 2px solid #1A7F37;
+}
+
+.unlockProjectName {
+  font-size: 10px;
+  color: #24292F;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 180px;
+}
+
+.unlockProjectRev {
+  font-size: 10px;
+  font-family: 'Courier New', monospace;
+  color: #1A7F37;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.unlockMore {
+  font-size: 10px;
+  color: #57606A;
+  text-align: right;
+  padding-right: 4px;
+}
+
+/* 採用ボタン: 大きく・目立つ */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #0969DA, #0C7BEF);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  box-shadow: 0 2px 8px rgba(9, 105, 218, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0C7BEF, #1A8FFF);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.4);
+}
+
+/* 採用済みバッジ */
+.statusBadge {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  color: #1A7F37;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(26, 127, 55, 0.08);
+  border: 1px solid rgba(26, 127, 55, 0.3);
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+}
+
+.statusBadgeTaken {
+  font-size: 11px;
+  color: #57606A;
+  text-align: center;
+  padding: 4px 0;
+}

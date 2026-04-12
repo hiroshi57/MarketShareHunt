@@ -1,0 +1,40 @@
+.card {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.secondary {
+  font-size: 9px;
+  color: #8B949E;
+}
+
+.value {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.subLabel {
+  font-size: 9px;
+  color: #8B949E;
+  letter-spacing: 0.04em;
+}
