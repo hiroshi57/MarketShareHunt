@@ -200,7 +200,7 @@ io.on('connection', (socket) => {
 });
 
 // SPA フォールバック（/api/* 以外はすべて index.html を返す）
-app.get('*', (req, res) => {
+app.get('/{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
