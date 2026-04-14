@@ -1,5 +1,5 @@
 // ゲームロジック（バックエンド用 - dummyData相当）
-const { v4: uuidv4 } = require('uuid');
+const uuidv4 = () => require('crypto').randomUUID();
 
 const MONTH_LABELS = [
   '2026年4月','2026年5月','2026年6月','2026年7月','2026年8月','2026年9月',
